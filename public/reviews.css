@@ -1,0 +1,67 @@
+.review {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+  }
+  .review img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .review h3 {
+    margin: 0;
+    align-items: center;
+  }
+  .review p {
+    font-style: italic;
+    color: #555;
+  }
+  .reviews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+
+
+  form {
+    width: 500px;
+    margin: 20px auto;
+    text-align: left;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    padding : 20px;
+  }
+  form label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  form input, form textarea, form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  form input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+  }
+  form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .anchor {
+    color : white;
+    text-decoration: none;
+  }

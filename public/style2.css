@@ -1,0 +1,25 @@
+.card {
+    display: inline-block;
+}
+
+.carousel-inner {
+
+    height: 47rem;
+}
+
+.carousel-inner img {
+    height: 47rem;
+}
+
+
+.navbar-nav {
+
+    justify-content: space-between;
+    display: flex;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}

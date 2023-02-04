@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+    <title>Boking Information</title>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/index2">BookYourTrek</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav justify-content-between nav-fill">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Login</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+       th, td {
+        text-align: center; 
+    }
+      /* Define a class for the table */
+      .booking-table {
+        margin: 60px auto; /* Center the table on the page and add some margin */
+      }
+      
+      /* Define styles for the table header */
+      .booking-table thead tr th {
+        background-color: #5DADE2; /* Set the background color */
+        color: rgb(255, 255, 255); /* Set the text color */
+      }
+      /* Define styles for the table rows */
+      .booking-table tbody tr {
+        border-bottom: 2px solid #e0e0e0; /* Add border bottom for the rows*/
+      }
+    </style>
+  
+
+  <body>
+    <h1 class="center-align">Booking Information</h1>
+    <table class="highlight centered booking-table">
+
+        <tr class="tr">
+            <th class="th">Booking_id</th>
+            <th class="th">Date of Trek</th>
+            <th class="th">Number of Members selected</th>
+        </tr>
+
+        <% if(o.length>0){ %>
+          <% for(var i = 0;i < o.length;i++){
+              let date = new Date(o[i].Date);
+              let formattedDate = date.toISOString().slice(0,10);
+          %>
+              <tr class="tr">
+                  <td ><%- o[i].Booking_id %></td>
+                  <td><%-formattedDate %></td>
+                  <td><%- o[i].No_of_Members %></td>
+              </tr>
+          <% } %>
+      <% }else{ %>
+              <tr>
+                  <td>Data not found!</td>
+              </tr>
+      <% } %>
+    </table>
+    </body>
+    
+
+     </body>
+    </html>
+    

@@ -1,0 +1,118 @@
+.card {
+
+    margin:auto;
+    margin-top: 30px;
+    border: 0 solid #f1f4f8;
+    border-radius: 0.375rem;
+    
+}
+
+.heading {
+    font-weight: bold;
+    width: 20%;
+    display: inline-block;
+    margin-right: 1px;
+    margin-bottom: 10px;
+    margin-left: 20px; /* Add margin-left property here */
+}
+.head1 {
+    margin-left: 110px;
+}
+.head2 {
+    margin-left: 180px;
+}
+.head3 {
+    margin-left: 165px;
+}
+
+
+
+
+
+.form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form-select {
+    width: 100%;
+    height: 40px;
+}
+
+/* .popup {
+    width : 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left : 50%;
+    transform: translate(-50%,10%) scale(0.1);
+    text-align: center;
+    padding : 0 30px 30px;
+    color : #333;
+    visibility: hidden;
+    transform: trasnform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top : 50%;
+    transform: translate(-50%,10%) scale(1);
+
+}
+
+.popup img {
+    width : 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button {
+    width : 100%;
+    margin-top:  50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color : #fff;
+    border : 0;
+    outline : none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+} */
+
+.modal {
+    
+    max-width: 50ch;
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+/*   
+    & > * {
+      margin: 0 0 0.5rem 0;
+    } */
+  }
+  
+  .modal::backdrop {
+    background: rgb(0 0 0 / 0.4);
+  }
+
+  .buttons {
+    border: 0;
+    cursor: pointer;
+    background: var(--gray-8);
+    color: var(--gray-2);
+    font-weight: 700;
+    padding: var(--size-2) var(--size-4);
+  }
+  
+  .buttons:hover,
+  .buttons:focus {
+    background: var(--cyan-9);
+  }

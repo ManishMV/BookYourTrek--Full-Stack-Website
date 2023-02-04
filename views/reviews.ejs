@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+
+    <div class="container">
+      
+        
+          
+          <form  action="/reviews" method="post" >
+            <label for="destination">Email ID</label>
+            <input type="email" id="email_id" name="email_id" required>
+
+            <label for="destination">Destination</label>
+            <select id="destination" name="destination" required>
+              <option value="NULL">(select)</option>
+              <option value="Nethravati Peak Trek">Nethravati Peak Trek</option>
+              <option value="Gokarana Beach Trek">Gokarana Beach Trek</option>
+              <option value="Skandagiri Sunrise Trek">Skandagiri Sunrise Trek</option>
+              <option value="Wayanad Trek & Camping">Wayanad Trek & Camping</option>
+              <option value="Narasimha parvata Trek">Narasimha parvata Trek</option>
+              <option value="Kumta Beach Trek">Kumta Beach Trek</option>
+            </select>
+          
+            <label for="rating">Rating</label>
+            <select id="rating" name="ratings">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          
+            <label for="feedback">Feedback</label>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+          
+            <label for="suggestions">Suggestions</label>
+            <textarea id="suggestions" name="suggestions" rows="5"></textarea>
+          
+            <input type="submit" value="Submit Review">
+          </form>
+          
+      
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+
+    <div class="container">
+        <div class="reviews">
+            <div class="review">
+                <img src="https://via.placeholder.com/150" alt="Profile picture">
+                <h3>Ravikanth</h3>
+                <br>
+                <p>"I had a great time at this destination. The sights were beautiful and the food was amazing. I would
+                    definitely recommend it to others."</p>
+            </div>
+            <div class="review">
+                <img src="https://via.placeholder.com/150" alt="Profile picture">
+                <h3>Anmol</h3>
+                <br>
+                <p>"I was really impressed with this destination. The staff were all so friendly and helpful, and the
+                    accommodations were top-notch. I can't wait to go back!"</p>
+            </div>
+            <div class="review">
+                <img src="https://via.placeholder.com/150" alt="Profile picture">
+                <h3>Deepindar goyal</h3>
+                <br>
+                <p>"This was my first time visiting this destination and I was not disappointed. The natural beauty of the
+                    place is breathtaking and there's so much to do. I would definitely come back again."</p>
+            </div>
+    
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <!-- <div class="d-grid gap-2 col-6 mx-auto text-center">
+        <button class="btn btn-primary" type="button"><a class="anchor" href="/alter1" >Alter your review</a></button>
+       
+      </div> -->
+
+      <br>
+    <br>
+    <br>
+
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+</body>
+</html>
+  
+  
+  
